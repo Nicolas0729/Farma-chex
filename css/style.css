@@ -531,7 +531,7 @@ body ul, li {
     }
     .right-product .info-product .price {
         font-size: 20px;
-        font-weight: 600;
+        font-weight: 700;
         color: var(--color-2);
         margin-bottom: 9px;
     }
