@@ -26,6 +26,9 @@ body input {
     box-shadow: none;
     outline: 0;
 }
+body ul, li {
+    list-style: none;
+}
 
 
 /* ----------------HEADER------------------- */
@@ -41,7 +44,7 @@ body input {
 }
 .header .content-header {
     width: 100%;
-    max-width: 1140px;
+    max-width: 1088px;
     margin: auto;
     padding: 15px 0px;
     display: flex;
@@ -133,6 +136,7 @@ body input {
     position: relative;
     border-radius: 8px;
     padding-left: 64px;
+    padding-right: 20px;
     border: none;
     font-size: 16px;
 }
@@ -195,7 +199,7 @@ body input {
 }
 .wrapper-car .content-wrapper {
     width: 100%;
-    max-width: 1140px;
+    max-width: 1088px;
     margin: auto;
     padding: 40px 0px;
     display: flex;
@@ -244,7 +248,7 @@ body input {
 }
 .cards-blog .content-blog {
     width: 100%;
-    max-width: 1140px;
+    max-width: 1088px;
     margin: auto;
     padding: 50px 0px;
 }
@@ -350,6 +354,7 @@ body input {
     position: relative;
     border-radius: 8px;
     padding-left: 64px;
+    padding-right: 20px;
     border: none;
     font-size: 16px;
 }
@@ -381,7 +386,7 @@ body input {
 }
 .footer .content-footer {
     width: 100%;
-    max-width: 1140px;
+    max-width: 1088px;
     margin: auto;
 }
 .content-footer .top-footer {
@@ -430,3 +435,190 @@ body input {
     font-size: 16px;
     color: var(--color-white);
 }
+
+
+/* ------------------PRODUCT--------------------- */
+.product {
+    width: 100%;
+}
+.product .content-product {
+    width: 100%;
+    max-width: 1088px;
+    margin: auto;
+    padding: 32px 0px 77px 0px;
+}
+.content-product .head-product {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    margin-bottom: 33px;
+}
+.content-product .head-product ul {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+.content-product .head-product ul li a {
+    font-size: 16px;
+    color: var(--color-2);
+    font-weight: 500;
+}
+.content-product .head-product ul li p {
+    font-size: 16px;
+    font-weight: 600;
+    color: var(--color-1);
+}
+.content-product .row-product {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1.15fr;
+    gap: 50px;
+}
+.content-product .row-product .left-product {
+    width: 100%;
+    padding-top: 90px;
+}
+.content-product .row-product .left-product .img-product img {
+    width: 100%;
+}
+.content-product .row-product .right-product {
+    width: 100%;
+}
+    .row-product .right-product .search-product {
+        width: 100%;
+        margin-bottom: 25px;
+    }
+    .right-product .search-product form {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 16px;
+    }
+    .right-product .search-product form .search-left {
+        width: 100%;
+        display: flex;
+        align-items: center;
+    }
+    .right-product .search-product form .search-left input[type="search"] {
+        width: 100%;
+        height: 56px;
+        position: relative;
+        border-radius: 8px;
+        padding-left: 64px;
+        padding-right: 20px;
+        border: none;
+        font-size: 16px;
+        box-shadow: 7px 7px 14px #0000001A;
+    }
+    .right-product .search-product form .search-left input[type="text"]::placeholder {
+        font-family: 'Nunito', sans-serif;
+    }
+    .right-product .search-product form .search-left .icon-grey {
+        width: 22px;
+        position: absolute;
+        margin-left: 21px;
+    }
+    .right-product .info-product {
+        width: 100%;
+        margin-bottom: 45px;
+    }
+    .right-product .info-product .title-product {
+        font-size: 40px;
+        font-weight: 600;
+        color: var(--color-1);
+        margin-bottom: 9px;
+    }
+    .right-product .info-product .price {
+        font-size: 20px;
+        font-weight: 600;
+        color: var(--color-2);
+        margin-bottom: 9px;
+    }
+    .right-product .info-product .unid {
+        font-size: 16px;
+        color: var(--color-text);
+        margin-bottom: 20px;
+    }
+    .right-product .info-product .title-descrip {
+        font-size: 20px;
+        color: var(--color-1);
+    }
+    .right-product .info-product .descrip-product {
+        font-size: 16px;
+        color: var(--color-text);
+    }
+    .right-product .compared {
+        width: 100%;
+    }
+    .right-product .compared .top-compared {
+        width: 100%;
+        margin-bottom: 25px;
+    }
+    .right-product .compared .top-compared .title-compared {
+        font-size: 32px;
+        color: var(--color-1);
+    }
+    .right-product .compared .head-compared {
+        width: 100%;
+        background-color: var(--color-2);
+        padding: 23px;
+        border-radius: 8px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 16px;
+    }
+    .right-product .compared .head-compared .item-comp {
+        width: 100%;
+    }
+    .right-product .compared .head-compared .item-comp .marquet {
+        font-size: 16px;
+        color: var(--color-white);
+        margin-bottom: 3px;
+    }
+    .right-product .compared .head-compared .item-comp .result {
+        width: 100%;
+        font-size: 16px;
+        color: var(--color-text);
+        padding: 14px 20px;
+        border-radius: 4px;
+        background-color: var(--color-white);
+    }
+    .right-product .column-prices {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+    .right-product .column-prices .item-price {
+        border-bottom: 1px solid var(--color-1);
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        align-items: center;
+    }
+    .right-product .column-prices .item-price:last-child {
+        border-bottom: 0px;
+    }
+    .right-product .column-prices .item-price .img-price {
+        padding: 20px;
+        text-align: center;
+        border-right: 1px solid var(--color-1);
+    }
+    .right-product .column-prices .item-price .img-price img {
+        height: 42px;
+    }
+    .right-product .column-prices .item-price .price-comp {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: var(--color-1);
+    }
+    .right-product .column-prices .item-price .the-color {
+        background-color: var(--color-3);
+        color: var(--color-white);
+    }
+    .right-product .column-prices .item-price .price-comp .price-prod {
+        font-size: 20px;
+        font-weight: 700;
+    }
